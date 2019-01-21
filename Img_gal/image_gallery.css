@@ -1,0 +1,99 @@
+body {	
+	margin: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header, footer {
+	padding: 10px;
+	background-color: lightgrey;
+	text-align: center;
+}
+
+header p {
+	font-size: 40px;
+}
+
+.logo img {
+	position: absolute;
+	top:50px;
+	left: 45px;
+} 
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	border: 1px solid black;
+}
+
+li a {
+	float: left;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+	border-right: 1px solid white;
+}
+
+li a:hover:not(.active) {
+	background-color: black;
+}
+
+.active {
+	background-color: white;
+	color: black;
+}
+
+.sidebar {
+	float: left;
+	width: 25%;
+	background-color: yellow;
+}
+
+
+.content {
+	float: left;
+	width: 75%;
+	background-color: blue;\
+}
+
+.content .gallery {
+	float: left;
+	width: 33.3333%;
+	padding: 10px;
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+}
+	
+
+.clearfix:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+@media screen and (max-width: 400px) {
+	li a {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.sidebar, .content {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.logo img {
+		position: relative;
+	}
+}
